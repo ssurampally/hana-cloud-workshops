@@ -45,4 +45,4 @@ ALTER PSE SSL ADD CERTIFICATE 156733;  -- the certificate number entered is to b
 -----------------------------------
 
 -- Alternatively SQL statement for Exorting data
-EXPORT INTO 's3-ca-central-1://AKIAJGA77ISHLAYF5ZLQ:Pr5jC5Z26UaOiNKAxY+h5Kbb3560YvKUunYjqs+y@myhanafile/hana-files/product2.csv' FROM DBADMIN.PRODUCTS ;
+EXPORT INTO 's3-ca-central-1://AKIAJGAxxxxxxxYF5ZLQ:Pr5jC5Z26UaOiNKAxY+h5xxxxxxxvKUunYjqs+y@myhanafile/hana-files/product2.csv' FROM DBADMIN.PRODUCTS ;
