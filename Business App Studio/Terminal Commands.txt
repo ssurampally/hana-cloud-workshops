@@ -1,0 +1,35 @@
+
+
+//user is the root/home directory.
+
+user: user $ whoami
+user
+
+//-- list out the files in the directory
+user: user $ dir
+node_modules  projects  tmp
+
+// chanage the directory 
+user: user $ cd projects
+
+//almost similar to dir
+user: projects $ ls
+hc2022  hc2022Q1
+
+// to remove a directory
+user: projects $ rmdir hc2022
+rmdir: failed to remove 'hc2022': Directory not empty
+
+//to remove a diretory that is not empty
+user: projects $ rm -rf hc2022
+
+
+// go back to home directory
+user: projects $ cd ..
+
+// go to previous directory
+user: user $ cd -
+/home/user/projects
+
+
+-----------------------------------------------
