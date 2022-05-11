@@ -1,5 +1,4 @@
 # hana-cloud-workshops
 
-code snippets for hana cloud learning
+This Repository Contains the code for hana cloud learning sessions in Business Application Studio.
 
--- Git push testing df
