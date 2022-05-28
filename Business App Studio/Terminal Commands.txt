@@ -16,6 +16,15 @@ user: user $ cd projects
 user: projects $ ls
 hc2022  hc2022Q1
 
+// to show hidden files also
+  ls -a
+  
+ // to create a new file in home directory. ~ represents home directory.
+ touch ~/
+ 
+// example: touch ~/.profile.  //here .profile is a system file that will be hidden by default. 
+ //for ZSH terminal : ~/.zshrc is the system file that needs to be created in Mac/ Unix.
+
 // to remove a directory
 user: projects $ rmdir hc2022
 rmdir: failed to remove 'hc2022': Directory not empty
