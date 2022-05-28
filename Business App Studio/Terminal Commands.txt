@@ -23,13 +23,12 @@ rmdir: failed to remove 'hc2022': Directory not empty
 //to remove a diretory that is not empty
 user: projects $ rm -rf hc2022
 
-
-// go back to home directory
-user: projects $ cd ..
-
 // go to previous directory
-user: user $ cd -
+user: user $ cd -   or cd ..
 /home/user/projects
 
-
+// go to home directory
+ cd ~
+ 
+ 
 -----------------------------------------------
