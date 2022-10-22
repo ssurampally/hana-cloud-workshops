@@ -5,9 +5,9 @@
 user: user $ whoami
 user
 
-//-- list out the files in the directory
+//-- list out the files in the directory -- Widows type of command
 user: user $ dir
-node_modules  projects  tmp
+result: node_modules  projects  tmp
 
 // chanage the directory 
 user: user $ cd projects
@@ -41,3 +41,19 @@ user: user $ cd -   or cd ..
  
  
 -----------------------------------------------
+
+//Cloud foundry commands
+cf login
+
+//displaying cf services
+cf services
+
+//target prod space
+cf target -s prod
+
+//deploy MTAR file  -- Right click on the MTAR file to get the file path and paste it.
+cf deploy <full-path-directory of the MTAR file>
+
+
+
+
