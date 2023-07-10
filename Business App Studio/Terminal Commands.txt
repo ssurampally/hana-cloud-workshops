@@ -65,6 +65,10 @@ git fetch origin main
 
 if you don't specify the branch name, then all branches updated.
 
+------------------
+//clean up remote origin from the Git local
+git remote remove origin
+
 -------------------------------------
 //Create and checkout to new branch
 git checkout -b dev
