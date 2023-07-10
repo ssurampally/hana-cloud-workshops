@@ -5,10 +5,8 @@ git config --global user.name "ssurampally"
 git config --global user.email "sreekanth.surampally@gmail.com"
 ---------------------------------
 
-//user is the root/home directory.
 
-user: user $ whoami
-user
+---------------------------------------------------
 
 //-- list out the files in the directory -- Widows type of command
 user: user $ dir
@@ -29,6 +27,55 @@ hc2022  hc2022Q1
  
 // example: touch ~/.profile.  //here .profile is a system file that will be hidden by default. 
  //for ZSH terminal : ~/.zshrc is the system file that needs to be created in Mac/ Unix.
+
+-------------------------------------------------
+// Run the Status command to review recent updates to the repository
+Git Status
+
+// Get the log of all changes and commits to the repo
+ Git log
+
+---------------------------------
+// initialize the repository - Navigate to the home folder of the project run Git init. This adds .git file and start tracking changes.
+git init
+
+// adding folder files to the repository tracking - Staging
+git add .
+
+// add only specific files to tracking - Staging
+---------------------------
+git add <filename>
+
+// Commit the files to Local Repo
+git commit -m "<Commit message>
+
+// Check git status and git log 
+------------------------------------------
+// Sync the local changes with remote
+// Create a remote branch for local
+git remote add origin <url>
+
+//Token
+<Token generated in Github>
+
+// Push the changes to remote repo
+git push origin main
+
+-------------------------------
+//fetch and pull
+git fetch origin main
+
+if you don't specify the branch name, then all branches updated.
+
+-------------------------------------
+//Create and checkout to new branch
+git checkout -b dev
+
+-----------------------------------------------------
+
+// to remove last commit from local
+git reset --hard 57c5ce6b766550bda8d74ecaa44fc2fb15f64458
+----------------------------
 
 // to remove a directory
 user: projects $ rmdir hc2022
