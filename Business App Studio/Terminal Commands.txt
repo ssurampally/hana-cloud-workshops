@@ -4,8 +4,6 @@ git config --global user.name "ssurampally"
 //Setting up the user email
 git config --global user.email "sreekanth.surampally@gmail.com"
 ---------------------------------
-
-
 ---------------------------------------------------
 
 //-- list out the files in the directory -- Widows type of command
@@ -76,7 +74,10 @@ git checkout -b dev
 // to remove last commit from local
 git reset --hard 57c5ce6b766550bda8d74ecaa44fc2fb15f64458
 ----------------------------
+// remove the initialization of repository
+rm -rf .git
 
+-------------------------------------
 // to remove a directory
 user: projects $ rmdir hc2022
 rmdir: failed to remove 'hc2022': Directory not empty
@@ -84,14 +85,10 @@ rmdir: failed to remove 'hc2022': Directory not empty
 //to remove a diretory that is not empty
 user: projects $ rm -rf hc2022
 
-// go to previous directory
-user: user $ cd -   or cd ..
-/home/user/projects
-
 // go to home directory
  cd ~
  
- 
+------------------------------------------------ 
 -----------------------------------------------
 
 //Cloud foundry commands
