@@ -1,4 +1,9 @@
+//Setting up user name
+git config --global user.name "ssurampally"
 
+//Setting up the user email
+git config --global user.email "sreekanth.surampally@gmail.com"
+---------------------------------
 
 //user is the root/home directory.
 
