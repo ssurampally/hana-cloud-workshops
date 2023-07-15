@@ -94,6 +94,46 @@ user: projects $ rm -rf hc2022
  
 ------------------------------------------------ 
 -----------------------------------------------
+Part 2: Git Branches
+
+// List all the branches in the repo
+git branch -a
+
+// creating a new branch
+git branch dev
+
+// rename a branch
+git branch -m dev development
+
+// delete a branch
+git branch -d dev
+
+// to check branch pointer
+git log
+----------------------------
+//fastforward merge
+
+//creating a dev branch - make changes in that and commit
+// Switch to master branch then merge from dev branch
+ git merge dev
+
+// 3 way merge
+// making changes in both branches (without a confict)
+//checkout to master then merge from dev branch
+
+
+--------------------
+// perform the merging in remote github also.
+
+
+
+----------------------------------
+------------------------------
+Part 3: Rebase and resolve merge conflicts
+
+
+
+
 
 //Cloud foundry commands
 cf login
