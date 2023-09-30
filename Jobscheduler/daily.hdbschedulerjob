@@ -1,0 +1,2 @@
+SCHEDULER JOB "daily"
+  CRON '* * * * 2 40 01' ENABLE PROCEDURE "sp_jobscheduler" 
