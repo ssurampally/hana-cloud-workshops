@@ -47,11 +47,14 @@ git add <filename>
 // Commit the files to Local Repo
 git commit -m "<Commit message>
 
+//make sure git main branch is checked out in local
+git branch -M main
+
 // Check git status and git log 
 ------------------------------------------
 // Sync the local changes with remote
 // Create a remote branch for local
-git remote add origin <url>
+git remote add origin <clone url>
 
 //Token
 <Token generated in Github>
