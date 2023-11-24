@@ -1,0 +1,7 @@
+column table na_sales
+(customer nvarchar(30),
+ Products nvarchar(30),
+ Country nvarchar(30),
+ sales_year nvarchar(4),
+ sales_value decimal(9,2)
+ ); 

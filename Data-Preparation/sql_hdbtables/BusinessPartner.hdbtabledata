@@ -1,0 +1,54 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "Addresses",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "addresses.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "ADDRESSID",
+					"CITY",
+					"COUNTRY",
+					"REGION"
+		  ]
+            }
+        },
+        {
+            "target_table": "BusinessPartner",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "businessPartner.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "PARTNERID",
+					"ADDRESSID",
+					"COMPANYNAME"
+                ]
+            }
+        },
+       
+       {
+            "target_table": "Products",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "products.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "PRODUCTID",
+					"CATEGORY",
+					"NAMEID",
+					"PRICE"
+			]
+            }
+        }
+   
+    ]
+}

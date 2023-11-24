@@ -1,0 +1,58 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "PO.Header",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "PurchaseOrder.csv",
+                "has_header": true
+            },
+            "import_settings": {
+            	"include_filter" : [ ],            
+                "import_columns": [
+                    "PURCHASEORDERID",
+					"HISTORY.CREATEDBY",
+					"HISTORY.CREATEDAT",
+					"HISTORY.CHANGEDBY",
+					"HISTORY.CHANGEDAT",
+					"NOTEID",
+					"PARTNERID",
+					"CURRENCY",
+					"GROSSAMOUNT",
+					"NETAMOUNT",
+					"TAXAMOUNT",
+					"LIFECYCLESTATUS",
+					"APPROVALSTATUS",
+					"CONFIRMSTATUS",
+					"ORDERINGSTATUS",
+					"INVOICINGSTATUS"
+                ]
+            }
+        },
+        {
+            "target_table": "PO.Item",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "PurchaseOrderitem.csv",
+                "has_header": true
+            },
+            "import_settings": {
+            	"include_filter" : [ ],            
+                "import_columns": [
+                    "PURCHASEORDERID",
+                    "PURCHASEORDERITEM",
+					"PRODUCTID",
+					"NOTEID",
+					"CURRENCY",
+					"GROSSAMOUNT",
+					"NETAMOUNT",
+					"TAXAMOUNT",
+					"QUANTITY",
+					"QUANTITYUNIT",
+					"DELIVERYDATE"
+                ]
+            }
+        }
+    ]
+}

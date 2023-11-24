@@ -1,0 +1,14 @@
+VIEW "Customer_Master_sql" (
+"PARTNERID",
+"ADDRESSID" ,
+"COMPANYNAME",
+"CITY" ,
+"COUNTRY" ,
+"REGION" ) as 
+SELECT "PARTNERID",
+B."ADDRESSID" ,
+"COMPANYNAME",
+"CITY" ,
+"COUNTRY" ,
+"REGION" FROM "BusinessPartner" B join "Addresses" A on B.addressid = A.addressid
+with read only ;
