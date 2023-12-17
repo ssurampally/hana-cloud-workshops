@@ -1,0 +1,24 @@
+Entire DB module build:
+
+Compares the file system version with HDI container version that was deployed before.
+
+- Only changed objects are deployed, if no changes nothing happens.
+- If any object is changed, it will be un-deployed first and deployed with new version. Takes care of dependencies.
+- If the object is new, gets deployed directly.
+   - if the object is removed, with automatic un-deployment setting, object will be dropped.
+
+Selective build:
+
+- We can select specific folder or file for deployment, only those objects are deployed.
+- No dependencies are taken care though the dependency has a problem.
+- If the selected object is new, it will be deployed directly.
+- If the selected object is changed, it will be un-deployed and deployed after.
+- If the selected object is no change, no action takes place on that.
+
+Force build:
+
+- Select one particular object and do the build, even though if it is not changed, it will un-deploy and deploy that object.
+- If you select 2 or more, then it works as selective build only.
+
+—————
+Reference link:https://blogs.sap.com/2018/04/26/selective-build-in-hana-development/
