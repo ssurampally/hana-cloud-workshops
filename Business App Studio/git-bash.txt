@@ -117,22 +117,37 @@ git log
 //fastforward merge
 
 //creating a dev branch - make changes in that and commit
-// Switch to master branch then merge from dev branch
- git merge dev
+// Switch to master branch then merge from dev branch local
+ 
+git merge dev
+with that your local master will move to the commit which your local dev is on.
 
 // 3 way merge
 // making changes in both branches (without a confict)
-//checkout to master then merge from dev branch
+//checkout to master then merge from dev branch -- same syntax as above.
 
 
---------------------
-// perform the merging in remote github also.
+----------------------------------------------------
+// perform the merge from a remote branch, 
+//it is important to get the changes to local first in order to push to remote.
+// 3 options we can pull  or fetch + merge   or Rebase
 
+git fetch -all 
+//check out to the local branch that you wanted to get the changes in
+git merge origin/master
+// with that your local branch  gets all the commits from remote master.
+
+// you can do this by writing  just one statement pull
+git pull origin/master
+
+// rebase from remote branch
+// if you do want the history you can completely rebase your local to remote master branch
+git rebase origin/master
 
 
 ----------------------------------
 ------------------------------
-Part 3: Rebase and resolve merge conflicts
+Part 3: resolve merge conflicts
 
 
 
