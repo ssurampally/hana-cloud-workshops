@@ -42,6 +42,9 @@ Select * from certificates where comment = 'S3';
 -- 4. add S3 certificate to SSL certificate store
 ALTER PSE SSL ADD CERTIFICATE 156733;  -- the certificate number entered is to be taken above select statement result.
 
+-- 5. Fix for:
+-- Error: (dberror) [2]: general error: Unable to determine SSL connection mode; Certificate is required
+SET PSE SSL PURPOSE REMOTE SOURCE;
 -----------------------------------
 
 -- Alternatively SQL statement for Exorting data
