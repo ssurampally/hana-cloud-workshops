@@ -77,10 +77,17 @@ git remote remove origin
 git checkout -b dev
 
 -----------------------------------------------------
+// Revert the uncommitted changes to the branch, revert to the last commit in the local branch
+git reset --hard HEAD
+---------------------------------------------------------------
 
 // to remove last commit from local
 git reset --hard 57c5ce6b766550bda8d74ecaa44fc2fb15f64458
-----------------------------
+-------------------------------------------------------
+// revert all the commits of the local branch and match to origin/main
+git reset --hard origin/main
+
+----------------------------------------------------------------------
 // remove the initialization of repository
 rm -rf .git
 
